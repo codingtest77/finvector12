@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinVector — Выгодные финансовые предложения 2026</title>
+    
+    <link rel="icon" href="img/finvector.jpg" type="image/jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0b0c10; 
+            --card-bg: rgba(255, 255, 255, 0.04); 
+            --accent-color: #007bff;
+            --text-main: #ffffff;
+            --text-muted: #a0aec0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            background-image: 
+                radial-gradient(circle at 15% 25%, rgba(255, 165, 80, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(255, 69, 0, 0.1) 0%, transparent 35%),
+                radial-gradient(circle at 45% 85%, rgba(0, 102, 255, 0.15) 0%, transparent 50%),
+                url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); 
+            background-attachment: fixed;
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card-content-horizontal {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px; 
+            margin-bottom: 20px;
+        }
+
+        .bank-card-img {
+            width: 220px; 
+            height: auto;
+            border-radius: 16px;
+            flex-shrink: 0; 
+        }
+
+        .card-info { flex-grow: 1; }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .features li {
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+        }
+
+        .apply-btn {
+            background: #fff; 
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: opacity 0.2s;
+            align-self: flex-end; 
+            min-width: 160px;
+        }
+
+        .card-tinkoff { border-left: 4px solid #ffdd2d; }
+        .card-psb { border-left: 4px solid #ff5a00; }
+        .card-uralsib { border-left: 4px solid #003399; }
+        .card-vtb { border-left: 4px solid #00AAFF; }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>FinVector: Лучшие банковские карты</h1>
+    <p>Актуальная подборка на 2026 год</p>
+</header>
+
+<div class="container">
+    <div class="card card-tinkoff">
+        <div class="card-content-horizontal">
+            <img src="img/tbank.png" alt="Т-Банк" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">Т-Банк Платинум</div>
+                <p class="card-desc">Лимитированная серия, светится при оплате.</p>
+                <ul class="features">
+                    <li>Лимит до 1 000 000 ₽</li>
+                    <li>0 ₽ за обслуживание</li>
+                    <li>Кэшбэк до 30%</li>
+                    <li>Рассрочка до 12 месяцев</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/27/?erid=LjN8Jw3pU" class="apply-btn">Оформить карту</a>
+    </div>
+
+    <div class="card card-psb">
+        <div class="card-content-horizontal">
+            <img src="img/psb.webp" alt="ПСБ Банк" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">ПСБ — Карта «Твой шанс»</div>
+                <p class="card-desc">Универсальное решение с честным беспроцентным периодом.</p>
+                <ul class="features">
+                    <li>До 180 дней без процентов</li>
+                    <li>Бесплатное обслуживание навсегда</li>
+                    <li>Снятие наличных без комиссии</li>
+                    <li>Кэшбэк на популярные категории</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/639/?erid=2W5zFFyDoLU" class="apply-btn">Оформить карту</a>
+    </div>
+
+    <div class="card card-uralsib">
+        <div class="card-content-horizontal">
+            <img src="img/yralsib.webp" alt="Уралсиб" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">Банк Уралсиб — Прибыль</div>
+                <p class="card-desc">Карта, которая приносит доход на остаток каждый месяц.</p>
+                <ul class="features">
+                    <li>Высокий % на остаток</li>
+                    <li>Бесплатное обслуживание</li>
+                    <li>Кэшбэк за покупки</li>
+                    <li>Удобное мобильное приложение</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/582/?erid=2W5zFHDQrk9" class="apply-btn">Оформить карту</a>
+    </div>
+
+    <div class="card card-vtb">
+        <div class="card-content-horizontal">
+            <img src="img/sticker.jpg" alt="ВТБ Стикер" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">ВТБ — Платежный стикер</div>
+                <p class="card-desc">Бесконтактная оплата смартфоном в одно касание.</p>
+                <ul class="features">
+                    <li>Кэшбэк до 25% в категориях</li>
+                    <li>0 ₽ за выпуск и обслуживание</li>
+                    <li>Клеится на любой смартфон</li>
+                    <li>Безопасные платежи через ВТБ</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/402/?erid=2W5zFFy5R4L" class="apply-btn">Оформить стикер</a>
+    </div>
+
+    <div class="card card-vtb">
+        <div class="card-content-horizontal">
+            <img src="img/vtb.png" alt="ВТБ Карта Возможностей" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">ВТБ — Карта «Возможностей»</div>
+                <p class="card-desc">Обновленные условия: покупки и переводы без процентов.</p>
+                <ul class="features">
+                    <li>До 200 дней без процентов на всё</li>
+                    <li>0 ₽ обслуживание навсегда</li>
+                    <li>Кэшбэк до 25% в категориях</li>
+                    <li>Снятие до 100 000 ₽ без комиссии</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/193/?erid=Kra23hiMc" class="apply-btn">Оформить карту</a>
+    </div>
+
+    <div class="card card-vtb">
+        <div class="card-content-horizontal">
+            <img src="img/vtbcredit.webp" alt="ВТБ Кредитная карта" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">ВТБ — Кредитная карта</div>
+                <p class="card-desc">Премиальные условия и расширенный лимит.</p>
+                <ul class="features">
+                    <li>Длительный льготный период</li>
+                    <li>Моментальное решение по заявке</li>
+                    <li>Кэшбэк на все покупки</li>
+                    <li>Удобное мобильное управление</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/622/?erid=2W5zFJExbPv" class="apply-btn">Оформить карту</a>
+    </div>
+
+    <div class="card card-vtb">
+        <div class="card-content-horizontal">
+            <img src="img/fcn.webp" alt="ВТБ РКО" class="bank-card-img">
+            <div class="card-info">
+                <div class="card-title">FCN // ВТБ -РКО (КЦ)</div>
+                <p class="card-desc">Эффективные решения для расчетно-кассового обслуживания бизнеса.</p>
+                <ul class="features">
+                    <li>Быстрое открытие счета</li>
+                    <li>Выгодные тарифы на переводы</li>
+                    <li>Персональный менеджер</li>
+                    <li>Удобный интернет-банк для бизнеса</li>
+                </ul>
+            </div>
+        </div>
+        <a href="https://t.fincpanetwork.ru/click/31615/473/?" class="apply-btn">Оформить РКО</a>
+    </div>
+</div>
+
+</body>
+</html>
